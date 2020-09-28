@@ -1,0 +1,524 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{margin:0;padding:0;}
+body{color:#444;font-family: 'Ubuntu', sans-serif;line-height:25px;font-size:15px;}
+img{max-width:100%;}
+h1,h2,h3,h4,h5,h6{font-family: 'Ubuntu', sans-serif;}
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+	
+}
+
+.topHeader {
+    border-top: 1px solid #ddd;
+    font-size: 12px;
+    color: #666;
+    overflow: hidden;
+    background: white;
+	transition:all 0.3s ease;
+}
+
+.mainContent {
+    width: 1170px;
+    margin: 0 auto;
+    padding:0px 15px;
+    display: table;
+}
+
+.addressbar .addressItems {
+    list-style: none;
+}
+
+.addressbar .addressItems li {
+    float: left;
+    padding: 10px;
+	border-right:1px solid #ddd;
+}
+
+.addressbar .addressItems li a {
+    text-decoration: none;
+	transition: all 1s ease;
+}
+.addressbar .addressItems li a:hover{
+	color:orange;
+}
+ul.addressItems li:first-child {
+    border-left: 1px solid #ddd;
+}
+.addressbar {
+    width: 670px;
+    float: left;
+}.addressbar {}
+
+.langChange {width: 150px;float: right;}
+
+.langOption select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ddd;
+    display: block;
+    font-size: 12px;
+    color: #666;
+}
+.mainHeader {
+    background: #1b1b58de;
+    display: table;
+    width: 100%;
+}
+
+.logo {
+    width: 100px;
+    float: left;
+    margin-top: 20px;
+    margin-left: 12px;
+}
+.searchForm {
+    float: right;
+    width: 100px;
+    display: grid;
+    place-items: center;
+    color: white;
+    padding: 46px 0px;
+    position: relative;
+}
+.navbar {
+    width: 925px;
+    float: left;
+}
+.navbar ul.menu li {
+    float: left;
+	position:relative;
+}
+
+.navbar ul.menu {
+    list-style: none;
+    float: right;
+}
+
+.navbar ul.menu li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    font-size: 14px;
+    padding: 32.5px 15px;
+    transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+}
+.navbar ul.menu li a:hover{
+	color:orange;
+	
+}
+section#slider {
+    background: -webkit-linear-gradient(#1b1b5875,#1c1c2357),url(../images/3.jpg);
+    height: 658px;
+    background-repeat: no-repeat;
+    background-position: 100% 0%;
+    background-size: cover;
+}
+.sliderTitle h2 {
+    color: white;
+    font-size: 40px;
+    font-family: arial;
+	   font-weight: 900;
+}
+
+.sliderTitle h2 span {
+    color: orange;
+}
+
+.sliderTitle p {
+    color: white;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.sliderButton a {
+    text-decoration: none;
+    background: #1b1b58;
+    padding: 20px;
+    color: white;
+    transition:all 0.3s ease;
+    margin-right: 20px;
+}
+
+.sliderButton span a {
+    background: #0000ff05;
+	 border: 2px solid #1b1b58;
+    padding: 18px 30px;
+}
+
+.sliderButton {
+    margin-top: 40px;
+}
+
+.sliderTitle {width: 614px;padding-top: 340px;}
+.sliderButton a:hover{
+	background:orange;
+	border-color: orange;
+}
+/* Dropdown css */
+.navbar ul  ul#subMenu{list-style:none;position:absolute;background: #242258;width: 150px;border-top: 2px solid transparent;text-align: center;transition: all 0.5s ease;transform: scaleY(0);transform-origin: top;margin-top: 2px;}
+.navbar ul   ul#subMenu li{float:none;}
+.navbar ul   ul#subMenu li a{display: block !important;padding: 5px;font-size: 13px;border-bottom: none;}
+.navbar ul  ul#subMenu li a:hover{}
+
+.navbar ul.menu li:hover #subMenu{
+	transform:scaleY(1);
+}
+.menu li span {
+    width: 100%;
+    background: orange;
+    position: absolute;
+    bottom: -2px;
+    height: 2px;
+	transition:all 0.3s ease;
+	transform:scaleX(0);
+	transform-origin:left;
+
+}
+.menu li span:before {
+    border-top: 8px solid #e9ad3e00;
+    border-right: 8px solid orange;
+    position: absolute;
+    content: "";
+    top: -4px;
+    left: 42%;
+    transform: rotate(226deg);
+}
+.navbar ul.menu li:hover span{
+	transform:scaleX(1);
+}
+
+/* Dropdown css end */
+.searchBox {
+    position: absolute;
+    top: 92px;
+     transform:scaleY(0); 
+    transition:all 0.5s;
+    transform-origin:top;
+    right: 137px;
+    width: 177px;
+	
+}
+.searchBox:hover{cursor:pointer;}
+
+.searchBoxInner .searInput {
+    padding: 11px;
+    width: 143px;
+    font-size: 12px;
+    border: none;
+    padding-left: 15px;
+}
+.searchBoxInner .searchErr {
+    background: orange;
+    padding: 12px 11px;
+    color: white;
+    font-weight: bold;
+    padding-top: 10px;
+    border: none;
+}
+.searchErr:hover{
+	cursor:pointer;
+}
+.searchBoxInner {
+    background: white;
+}
+
+.searchForm:hover .searchBox {
+  transform:scaleY(1);
+  cursor:pointer;
+}
+.section-title-inner h2 {
+    text-align: center;
+    font-size: 38px;
+    color: #2b2b62;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    padding: 30px;
+    width: 625px;
+    margin: 0 auto;
+    color: #847d7d;
+    padding-top: 60px;
+}
+
+.section-title-inner h2 span {
+    font-weight: 300;
+    margin-right: 5px;
+}
+.serviceBoxWrap {
+    overflow: hidden;
+    display: block;
+    margin-top: 30px;
+}
+.boxIcon{
+	width: 50px;
+	transition:all 0.3s ease;
+	text-align: center;
+	margin: auto;
+	margin-bottom: 10px;
+}
+.boxTitle h2 {
+    font-size: 18px;
+    color: #39396e;
+    margin-bottom: 10px;
+}
+
+.boxDescription p {
+    color: #5b5959;
+    font-size: 14px;
+    padding: 0px 10px;
+}
+
+.boxDescription {
+    color: #2b2b49;
+}
+section#servies {
+    overflow: hidden;
+}
+.serviceBox {
+    width: 330px;
+    float: left;
+    margin-right: 60px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+.serviceBoxInner:hover .boxIcon {
+    transform: scale(1.2);
+}
+
+.serviceBoxInner:hover .boxTitle h2 {
+    color: orange;
+}
+.bounball {
+    width: 7px;
+    height: 14px;
+    background: orange;
+    margin: auto;
+    border-radius: 30%;
+}
+.bounballWrapper{
+	
+}
+.bounballInner {
+    width: 21px;
+    height: 37px;
+    background: #0000000a;
+    margin: auto;
+    display: grid;
+    place-items: center;
+    border-radius: 30%;
+    border: 1px solid white;
+    transition: all 0.3s ease;
+    animation-duration:1s;
+    animation-name:bouncer;
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+	cursor:pointer;
+}
+
+.bounballInner:hover {
+    background: white;
+}
+
+.bounballInner:hover .bounball {
+    background: black;
+}
+@keyframes bouncer{
+	from{transform:translateY(0px)}
+to{transform:translateY(45px)}
+}
+section#servicesBox {
+    background: #F4F8FF;
+}
+.galleryBox {
+    width: 350px;
+    height: 280px;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+    transition:all 0.3s ease;
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.galleryBox:hover img{
+   
+	transform:scale(1.2);
+}
+
+.galleryBoxOverly {
+    width: 350px;
+    height: 280px;
+    background: #39396ee0;
+    position: absolute;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    top: 0px;
+    transform: scaleX(0);
+   
+    transition: all 0.3s ease;
+}
+
+.galleryBoxOverly h2 {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.galleryBoxOverly p {
+    margin-bottom: 40px;
+}
+
+.galleryBox:hover .galleryBoxOverly {
+    display: block;
+}
+
+.galleryBox:hover .galleryBoxOverly {
+    transform: scaleX(1);
+}
+.galleryBoxOverly img:hover {
+    background: orange;
+    transition: 0.3s;
+}
+.galleryBoxes {
+    overflow: hidden;
+    margin-top: 30px;
+}
+.goalLeft {
+    float: left;
+    width: 550px;
+}
+
+.goalTitle h2 {
+    font-size: 30px;
+    color: white;
+}
+.goalWrapper {
+    overflow: hidden;
+    padding-top: 100px;
+}
+
+.goalTitle h2 span {
+    font-weight: 300;
+    margin-right: 5px;
+}
+
+.goaldesc p {
+    color: white;
+    padding: 20px 0px;
+}
+
+section#OurGoal {
+    background: -webkit-linear-gradient(#1f1b57bd,#1f1b57bf),url(../images/bg-goal.jpg);
+    background-attachment: fixed;
+    padding-bottom: 70px;
+    background-size: cover;
+}
+
+.goalRighBox {
+    overflow: hidden;
+    text-align: center;
+    color: white;
+    border: 1px solid white;
+    width: 240px;
+    height: 115px;
+    float: left;
+    display: grid;
+    place-items: center;
+    border-radius: 10px;
+    transition: 0.3s;
+    margin: 15px;
+}
+
+.goalRighBox {}
+
+.goalRighBoxInner {}.goalRighBoxInner h2 {
+    margin-bottom: 7px;
+}
+.goalRighBox:hover {
+    background: orange;
+	border:1px solid orange;
+}
+.goalRight {
+    float: right;
+    width: 550px;
+}
+
+.fLogo {
+    width: 100px;
+}
+
+.footerTop {
+    background: -webkit-linear-gradient(#1e1e59db,#1e1e59db),url(../images/footer.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+footer#footer {
+}
+
+.fBox {
+    width: 370px;
+    overflow: hidden;
+    color: white;
+    font-size: 14px;
+    float: left;
+    margin-right: 20px;
+}
+
+.fContact ul {
+    list-style: none;
+    color: white;
+}
+
+.fContact ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+}
+.fboxWrapper {
+    padding: 50px 0px;
+    overflow: hidden;
+}
+
+.fBoxDesc {
+    margin: 20px 0px;
+}
+
+.coppyRight {
+    background: #24243e;
+    padding: 40px 0px;
+    margin: auto;
+    text-align: center;
+    color: white;
+}
+#scickyID{
+	margin-top:-47px;
+}
+.backtoTop {
+    position: absolute;
+    
+    right: 30px;
+    background: orange;
+    padding: 5px;
+    border-radius: 31%;
+}
+
+.backtoTop a {
+    color: white;
+}
+html{scroll-behavior:smooth;}
+.mobileMenuBar{
+	display:none;
+}
+#caretIcon{display:none;};
+
+
